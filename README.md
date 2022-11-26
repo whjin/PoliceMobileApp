@@ -28,12 +28,12 @@
 - `unpackage`，打包文件、Android原生插件、发布配置文件
 - `App.vue`，引入公共样式及`iconfont`图标文件
 - `pages/login`、`pages/home/index`、`pages/personal`、`pages/schedule/index`对应登录、概况、我的、待办主模块，内部包含主模块下子模块
-- `pages/login`，登录功能（URL配置弹框，`uni.setStorageSync`缓存登录账号、登录用户信息及`token`信息），**本功能已完成**
-- `pages/home/index`，主协管监室概况页面，**本功能已完成**
-- `pages/home/room`，主协管监室详情页面，**本功能已完成**
-- `pages/home/disease`重大疾病人员、`pages/home/focus`重点关注人员、`pages/home/lawyer`律师会见、`pages/home/arraign`提讯、`pages/home/family`家属会见、`pages/home/outside`所外就医、`pages/home/inside`所内就医、`pages/home/adjust`监室调整，**本功能已完成**
-- `pages/personal`，**本页面功能已完成**
-- `pages/schedule/index`，待办列表页面，**本功能已完成**
-- `pages/schedule/talk`、`pages/schedule/alarm`，待办事项、报警事项详情页面，**本功能已完成**
+- `pages/login`，登录功能（URL配置弹框，`uni.setStorageSync`缓存登录账号、登录用户信息及`token`信息）
+- `pages/home/index`，主协管监室概况页面
+- `pages/home/room`，主协管监室详情页面
+- `pages/home/disease`重大疾病人员、`pages/home/focus`重点关注人员、`pages/home/lawyer`律师会见、`pages/home/arraign`提讯、`pages/home/family`家属会见、`pages/home/outside`所外就医、`pages/home/inside`所内就医、`pages/home/adjust`监室调整
+- `pages/personal`
+- `pages/schedule/index`，待办列表页面
+- `pages/schedule/talk`、`pages/schedule/alarm`，待办事项、报警事项详情页面
 
 ## 本文档已同步到`readme.txt`，可根据产品开发需求进行增删。
