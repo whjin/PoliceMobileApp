@@ -3,8 +3,6 @@ export default {
   onLaunch: function () {
   },
   onShow: function () {
-    let args = plus.runtime.arguments;
-    console.log(JSON.stringify(args));
   },
   onHide: function () {
   }
