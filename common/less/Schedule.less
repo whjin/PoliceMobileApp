@@ -1,0 +1,223 @@
+.schedule-container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  .schedule-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    .schedule-box {
+      display: flex;
+      margin: 20upx;
+      font-family: PingFang SC, sans-serif;
+      .schedule-list {
+        border-radius: 8upx;
+        box-shadow: 0 0 8upx #ccc inset;
+        margin-right: 30upx;
+        .schedule-item {
+          width: 338upx;
+          height: 160upx;
+          box-sizing: border-box;
+          font-size: 28upx;
+          font-weight: 500;
+          color: #999;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          .item-left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 48upx;
+            text {
+              font-size: 36upx;
+              font-weight: bold;
+            }
+          }
+          .item-right {
+            width: 100upx;
+            height: 100upx;
+            image {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+      .schedule-list:nth-child(1) {
+        background: url(../../static/images/index/bg_pending.png) no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        text {
+          color: #ff3737;
+        }
+      }
+      .schedule-list:nth-child(2) {
+        background: url(../../static/images/index/bg_processed.png) no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        text {
+          color: #0080ff;
+        }
+      }
+      .schedule-detail {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        .detail-header {
+          .detail-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text {
+              font-size: 28upx;
+              font-weight: 500;
+              color: #4c4c4c;
+            }
+            .detail-image {
+              image {
+                width: 32upx;
+                height: 16upx;
+              }
+            }
+          }
+          .detail-form {
+            height: 100%;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            border-bottom: 1upx solid #ccc;
+            .form-list {
+              line-height: 46upx;
+              box-sizing: border-box;
+              margin-right: 80upx;
+              /deep/.uni-radio-input {
+                width: 32upx;
+                height: 32upx;
+                border: 2upx solid #ccc;
+                box-shadow: 0 0 4upx #ccc;
+              }
+              /deep/.uni-radio-input:hover {
+                border: 1upx solid #007aff;
+              }
+              /deep/.uni-radio-input-checked:before {
+                font-size: 28upx;
+              }
+              text {
+                font-size: 28upx;
+                font-weight: 500;
+                color: #999;
+                margin-left: 20upx;
+              }
+            }
+          }
+        }
+        .detail-content {
+          margin-top: 20upx;
+          .detail-content-scroll {
+            height: calc(100vh - 22vh);
+            .detail-list {
+              width: 100%;
+              box-sizing: border-box;
+              display: flex;
+              flex-direction: column;
+              margin-bottom: 20upx;
+              .detail-item {
+                height: 158upx;
+                border: 1upx solid #ccc;
+                box-shadow: 0 0 8upx #ccc inset;
+                box-sizing: border-box;
+                display: flex;
+                .item-left {
+                  width: 132upx;
+                  box-sizing: border-box;
+                  image {
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+                .item-center,
+                .item-right {
+                  display: flex;
+                  flex: 1;
+                  flex-direction: column;
+                  margin-left: 16upx;
+                  justify-content: space-evenly;
+                  .item-head {
+                    display: flex;
+                    align-items: center;
+                    text {
+                      display: inline-block;
+                      overflow: auto;
+                      white-space: nowrap;
+                      box-sizing: border-box;
+                    }
+                    text:nth-child(1) {
+                      width: 160upx;
+                      font-size: 30upx;
+                      font-weight: bold;
+                      color: #333;
+                    }
+                    text:nth-child(2) {
+                      width: 118upx;
+                      font-size: 28upx;
+                      font-weight: 500;
+                      color: #999;
+                      margin-left: 16upx;
+                    }
+                  }
+                  .item-middle,
+                  .item-footer {
+                    width: 300upx;
+                    box-sizing: border-box;
+                    font-size: 28upx;
+                    font-weight: 500;
+                    color: #999;
+                    overflow: auto;
+                    white-space: nowrap;
+                  }
+                  .item-footer {
+                    color: #ff3737;
+                  }
+                }
+                .item-right {
+                  align-items: flex-end;
+                  margin-right: 16upx;
+                  .item-date {
+                    font-weight: 500;
+                    font-size: 24upx;
+                    color: #999;
+                    overflow: auto;
+                    white-space: nowrap;
+                  }
+                  .item-button {
+                    width: 215upx;
+                    height: 64upx;
+                    box-sizing: border-box;
+                    background-color: #198cff;
+                    border-radius: 8upx;
+                    color: #fff;
+                    font-size: 32upx;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text {
+                      overflow: auto;
+                      white-space: nowrap;
+                      padding: 0 8upx;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .detail-form-scroll {
+            height: calc(100vh - 26vh);
+          }
+        }
+      }
+    }
+  }
+}

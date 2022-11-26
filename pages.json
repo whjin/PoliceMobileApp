@@ -1,0 +1,130 @@
+{
+  "pages": [
+    {
+      "path": "pages/login/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/home/index/index",
+      "style": {
+        "navigationBarTitleText": "概况"
+      }
+    },
+    {
+      "path": "pages/personal/index",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    },
+    {
+      "path": "pages/schedule/index/index",
+      "style": {
+        "navigationBarTitleText": "待办事项"
+      }
+    },
+    {
+      "path": "pages/home/room/index",
+      "style": {
+        "navigationBarTitleText": "监室概况"
+      }
+    },
+    {
+      "path": "pages/home/disease/index",
+      "style": {
+        "navigationBarTitleText": "重大疾病人员"
+      }
+    },
+    {
+      "path": "pages/home/focus/index",
+      "style": {
+        "navigationBarTitleText": "重点关注人员"
+      }
+    },
+    {
+      "path": "pages/home/lawyer/index",
+      "style": {
+        "navigationBarTitleText": "律师会见"
+      }
+    },
+    {
+      "path": "pages/home/arraign/index",
+      "style": {
+        "navigationBarTitleText": "提讯"
+      }
+    },
+    {
+      "path": "pages/home/family/index",
+      "style": {
+        "navigationBarTitleText": "家属会见"
+      }
+    },
+    {
+      "path": "pages/home/inside/index",
+      "style": {
+        "navigationBarTitleText": "所内就医"
+      }
+    },
+    {
+      "path": "pages/home/outside/index",
+      "style": {
+        "navigationBarTitleText": "所外就医"
+      }
+    },
+    {
+      "path": "pages/home/adjust/index",
+      "style": {
+        "navigationBarTitleText": "监室调整"
+      }
+    },
+    {
+      "path": "pages/schedule/talk/index",
+      "style": {
+        "navigationBarTitleText": "谈话教育详情"
+      }
+    },
+    {
+      "path": "pages/schedule/alarm/index",
+      "style": {
+        "navigationBarTitleText": "报警事件详情"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "移动警务终端",
+    "navigationBarBackgroundColor": "#0080FF",
+    "pageOrientation": "portrait"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#0080ff",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "height": "80px",
+    "fontSize": "16px",
+    "iconWidth": "38px",
+    "spacing": "13px",
+    "list": [
+      {
+        "pagePath": "pages/home/index/index",
+        "iconPath": "static/images/tabs/index.png",
+        "selectedIconPath": "static/images/tabs/index_s.png",
+        "text": "概况"
+      },
+      {
+        "pagePath": "pages/personal/index",
+        "iconPath": "static/images/tabs/personal.png",
+        "selectedIconPath": "static/images/tabs/personal_s.png",
+        "text": "我的"
+      },
+      {
+        "pagePath": "pages/schedule/index/index",
+        "iconPath": "static/images/tabs/schedule.png",
+        "selectedIconPath": "static/images/tabs/schedule_s.png",
+        "text": "待办"
+      }
+    ]
+  }
+}

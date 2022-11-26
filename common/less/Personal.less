@@ -1,0 +1,103 @@
+.personal-container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  .personal-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    .personal-box {
+      display: flex;
+      flex-direction: column;
+      .personal-title {
+        width: 100%;
+        height: 30upx;
+        box-sizing: border-box;
+        line-height: 30upx;
+        font-family: Microsoft YaHei, sans-serif;
+        font-weight: bold;
+        font-size: 30upx;
+        padding-left: 20upx;
+        margin-top: 20upx;
+        color: #0080ff;
+        display: flex;
+        align-items: center;
+      }
+      .personal-title::before {
+        content: "";
+        display: inline-block;
+        width: 6.88upx;
+        height: 30upx;
+        background-color: #0080ff;
+        margin-right: 18upx;
+      }
+      .personal-content,
+      .personal-duty {
+        display: flex;
+        border: 1upx solid #ccc;
+        box-shadow: 0 0 8upx #ccc;
+        margin: 20upx 20upx 0 20upx;
+        .personal-image {
+          width: 146upx;
+          box-sizing: border-box;
+          image {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .personal-info {
+          height: 100%;
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          margin-left: 20upx;
+          line-height: 56upx;
+          text {
+            width: 543upx;
+            box-sizing: border-box;
+            display: inline-block;
+            font-family: PingFang SC, sans-serif;
+            font-size: 28upx;
+            font-weight: 500;
+            color: #999;
+            overflow: auto;
+            white-space: nowrap;
+          }
+          text:nth-child(1) {
+            font-size: 30upx;
+            font-weight: bold;
+            color: #333;
+          }
+        }
+      }
+      .personal-duty {
+        display: flex;
+        flex-direction: column;
+        .content-list {
+          width: 100%;
+          box-sizing: border-box;
+          padding-left: 24upx;
+          .content-item {
+            font-family: PingFang SC, sans-serif;
+            font-size: 28upx;
+            font-weight: 500;
+            color: #999;
+            line-height: 52upx;
+          }
+        }
+      }
+    }
+    .personal-button {
+      height: 68upx;
+      box-sizing: border-box;
+      background-color: #0080ff;
+      border-radius: 8upx;
+      font-family: PingFang SC, sans-serif;
+      font-size: 32upx;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 126upx 20upx;
+    }
+  }
+}

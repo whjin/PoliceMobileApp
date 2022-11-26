@@ -1,0 +1,164 @@
+.login-container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  .login-wrapper {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    .login-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 96upx;
+      .logo-image {
+        width: 182upx;
+        height: 215upx;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        image {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .logon-content {
+        width: 352upx;
+        height: 42upx;
+        box-sizing: border-box;
+        font-size: 42upx;
+        font-family: Microsoft YaHei, sans-serif;
+        font-weight: 500;
+        color: #292929;
+        line-height: 36upx;
+        margin-top: 28upx;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    .login-form {
+      margin: 0 auto;
+      box-sizing: border-box;
+      margin-bottom: 30upx;
+      .form-account,
+      .form-password {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 38upx 0;
+        position: relative;
+        input {
+          width: 492upx;
+          height: 58upx;
+          box-sizing: border-box;
+          border: 1upx solid #292929;
+          padding: 0 56upx;
+          border-radius: 6.88upx;
+          font-size: 24upx;
+          color: #292929;
+        }
+        .image-account,
+        .image-password {
+          width: 40upx;
+          height: 40upx;
+          box-sizing: border-box;
+          border-radius: 6.88upx;
+          position: absolute;
+          left: 6.88upx;
+        }
+        .image-visible {
+          width: 40upx;
+          height: 24upx;
+          position: absolute;
+          right: 6.88upx;
+        }
+      }
+    }
+    .login-button {
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .button-confirm {
+        width: 492upx;
+        height: 58upx;
+        box-sizing: border-box;
+        border-radius: 6.88upx;
+        font-family: Microsoft YaHei, sans-serif;
+        font-size: 28upx;
+        color: #fff;
+        background-color: #007aff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 1em;
+        text-indent: 1em;
+      }
+      .button-version {
+        font-family: Source Han Sans SC, sans-serif;
+        font-size: 20upx;
+        font-weight: 500;
+        color: #a3a3a3;
+        line-height: 56upx;
+      }
+    }
+    .login-modal {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      .modal-mask {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        .modal-content {
+          width: 480upx;
+          height: 350upx;
+          box-sizing: border-box;
+          background-color: #fff;
+          border-radius: 18upx;
+          padding: 20upx 30upx;
+          .content-item {
+            margin-bottom: 20upx;
+            line-height: 48upx;
+            text {
+              font-size: 28upx;
+              font-weight: 500;
+            }
+            input {
+              height: 48upx;
+              box-sizing: border-box;
+              border: 1upx solid #696969;
+              box-shadow: 0 0 4upx #696969;
+              padding-left: 12upx;
+              font-size: 24upx;
+            }
+          }
+          .content-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text {
+              display: inline-block;
+              width: 150upx;
+              height: 40upx;
+              color: #007aff;
+              font-size: 28upx;
+              text-align: center;
+              line-height: 40upx;
+              margin-top: 20upx;
+            }
+          }
+        }
+      }
+    }
+  }
+}
